@@ -257,6 +257,13 @@
     .foot-copy { font-family: var(--mono); font-size: 12px; color: var(--ink-45); }
     .foot-status { font-family: var(--mono); font-size: 12px; color: var(--ink-45); }
 
+    /* ---- store badges ---- */
+    .store-badges { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .store-badge { display: inline-block; line-height: 0; border-radius: 8px; transition: transform .12s, opacity .15s; }
+    .store-badge:hover { transform: translateY(-1px); opacity: 0.9; }
+    .store-badge svg { height: 52px; width: auto; display: block; }
+    @media (max-width: 400px) { .store-badge svg { height: 46px; } }
+
     /* ---- responsive ---- */
     @media (max-width: 820px) {
       .feat-grid { grid-template-columns: 1fr 1fr; }
@@ -309,9 +316,28 @@
       <div class="eyebrow">For UK sole traders &amp; landlords</div>
       <h1>File your taxes <em>quarter by quarter</em>, straight from your phone.</h1>
       <p class="hero-lede">TaxLiteMTD prepares and submits your HMRC quarterly updates and Final Declaration under Making Tax Digital for Income Tax — so you can leave the annual Self Assessment, and the accountant's fee, behind.</p>
-      <div class="hero-actions">
-        <a href="#pricing" class="btn-solid">Download for iOS</a>
-        <a href="#pricing" class="btn-line">Download for Android</a>
+      <div class="store-badges">
+        <a href="#" class="store-badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect width="120" height="40" rx="6.5" fill="#000"/>
+            <rect x="0.5" y="0.5" width="119" height="39" rx="6" fill="none" stroke="#A6A6A6" stroke-width="0.4"/>
+            <path d="M24.77 19.78c-.02-2.02 1.65-3 1.73-3.05-0.94-1.38-2.4-1.57-2.93-1.59-1.24-.13-2.43.73-3.06.73-.64 0-1.6-.72-2.64-.7-1.35.02-2.6.79-3.3 2-1.41 2.45-.36 6.06 1 8.04.67.97 1.46 2.06 2.5 2.02 1.01-.04 1.39-.65 2.61-.65 1.21 0 1.56.65 2.62.63 1.08-.02 1.77-.99 2.42-1.96.78-1.12 1.09-2.22 1.1-2.28-.02-.01-2.1-.81-2.13-3.2zM22.76 13.83c.55-.67.93-1.59.82-2.52-.8.03-1.79.54-2.36 1.2-.51.58-.96 1.53-.84 2.42.9.07 1.82-.45 2.38-1.1z" fill="#fff"/>
+            <text x="34" y="16" fill="#fff" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+            <text x="34" y="29" fill="#fff" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">App Store</text>
+          </svg>
+        </a>
+        <a href="#" class="store-badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect width="135" height="40" rx="6.5" fill="#000"/>
+            <rect x="0.5" y="0.5" width="134" height="39" rx="6" fill="none" stroke="#A6A6A6" stroke-width="0.4"/>
+            <path d="M12.1 11.3c-.23.24-.36.62-.36 1.11v15.18c0 .49.13.87.36 1.11l.05.05 8.5-8.5v-.2l-8.5-8.5-.05.05z" fill="#00D0FF"/>
+            <path d="M23.5 23.4l-2.85-2.85v-.2l2.85-2.85.06.04 3.37 1.92c.96.55.96 1.44 0 1.99l-3.43 1.95z" fill="#FFD400"/>
+            <path d="M23.56 23.36l-2.91-2.91-8.55 8.55c.32.34.84.38 1.43.05l10.03-5.69" fill="#FF3B3B"/>
+            <path d="M23.56 16.64L13.53 10.95c-.59-.34-1.11-.29-1.43.05l8.55 8.55 2.91-2.91z" fill="#00F076"/>
+            <text x="33" y="16" fill="#fff" font-family="Roboto, Arial, sans-serif" font-size="6.5" font-weight="400">GET IT ON</text>
+            <text x="33" y="29" fill="#fff" font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="500">Google Play</text>
+          </svg>
+        </a>
       </div>
       <div class="hero-meta">
         <span>Replaces Self Assessment</span>
@@ -580,9 +606,28 @@
     <div class="wrap">
       <h2>Get ahead of <em>April 2026.</em></h2>
       <p>Set up your records now, and your first quarterly update will be ready to file the day the rules begin.</p>
-      <div class="cta-actions">
-        <a href="#pricing" class="btn-solid">Download for iOS</a>
-        <a href="#pricing" class="btn-line">Download for Android</a>
+      <div class="store-badges" style="justify-content:center;">
+        <a href="#" class="store-badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect width="120" height="40" rx="6.5" fill="#000"/>
+            <rect x="0.5" y="0.5" width="119" height="39" rx="6" fill="none" stroke="#A6A6A6" stroke-width="0.5"/>
+            <path d="M24.77 19.78c-.02-2.02 1.65-3 1.73-3.05-0.94-1.38-2.4-1.57-2.93-1.59-1.24-.13-2.43.73-3.06.73-.64 0-1.6-.72-2.64-.7-1.35.02-2.6.79-3.3 2-1.41 2.45-.36 6.06 1 8.04.67.97 1.46 2.06 2.5 2.02 1.01-.04 1.39-.65 2.61-.65 1.21 0 1.56.65 2.62.63 1.08-.02 1.77-.99 2.42-1.96.78-1.12 1.09-2.22 1.1-2.28-.02-.01-2.1-.81-2.13-3.2zM22.76 13.83c.55-.67.93-1.59.82-2.52-.8.03-1.79.54-2.36 1.2-.51.58-.96 1.53-.84 2.42.9.07 1.82-.45 2.38-1.1z" fill="#fff"/>
+            <text x="34" y="16" fill="#fff" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="6.5" font-weight="400">Download on the</text>
+            <text x="34" y="29" fill="#fff" font-family="-apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">App Store</text>
+          </svg>
+        </a>
+        <a href="#" class="store-badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect width="135" height="40" rx="6.5" fill="#000"/>
+            <rect x="0.5" y="0.5" width="134" height="39" rx="6" fill="none" stroke="#A6A6A6" stroke-width="0.5"/>
+            <path d="M12.1 11.3c-.23.24-.36.62-.36 1.11v15.18c0 .49.13.87.36 1.11l.05.05 8.5-8.5v-.2l-8.5-8.5-.05.05z" fill="#00D0FF"/>
+            <path d="M23.5 23.4l-2.85-2.85v-.2l2.85-2.85.06.04 3.37 1.92c.96.55.96 1.44 0 1.99l-3.43 1.95z" fill="#FFD400"/>
+            <path d="M23.56 23.36l-2.91-2.91-8.55 8.55c.32.34.84.38 1.43.05l10.03-5.69" fill="#FF3B3B"/>
+            <path d="M23.56 16.64L13.53 10.95c-.59-.34-1.11-.29-1.43.05l8.55 8.55 2.91-2.91z" fill="#00F076"/>
+            <text x="33" y="16" fill="#fff" font-family="Roboto, Arial, sans-serif" font-size="6.5" font-weight="400">GET IT ON</text>
+            <text x="33" y="29" fill="#fff" font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="500">Google Play</text>
+          </svg>
+        </a>
       </div>
     </div>
   </section>
