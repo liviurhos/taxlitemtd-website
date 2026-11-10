@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — TaxLiteMTD</title>
+  <title>Privacy Policy - TaxLiteMTD</title>
   <meta name="description" content="How TaxLiteMTD by Innovation Hub Studio Ltd collects, uses, and protects your data under UK data protection law." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://taxlitemtd.co.uk/privacy" />
@@ -45,10 +45,10 @@
     .doc-body p { color: var(--ink-70); margin-bottom: 14px; }
     .doc-body ul { margin: 0 0 14px 0; padding-left: 0; list-style: none; }
     .doc-body li { color: var(--ink-70); padding: 5px 0 5px 22px; position: relative; }
-    .doc-body li::before { content: "—"; position: absolute; left: 0; color: var(--green); font-family: var(--mono); }
+    .doc-body li::before { content: "-"; position: absolute; left: 0; color: var(--green); font-family: var(--mono); }
     .doc-body a { color: var(--green); }
     .doc-body strong { color: var(--ink); }
-    .callout { background: var(--white); border: 1px solid var(--line-strong); border-radius: 3px; padding: 20px 22px; margin: 20px 0; }
+    .callout { background: var(--white); border: 1px solid var(--line-strong); border-radius: 0; padding: 20px 22px; margin: 20px 0; }
     .callout p { margin: 0; font-size: 14.5px; }
 
     footer { padding: 40px 0; background: var(--paper); border-top: 1px solid var(--line); }
@@ -78,7 +78,7 @@
     <div class="wrap">
       <div class="doc-label">Legal</div>
       <h1>Privacy Policy</h1>
-      <p class="doc-meta">Last updated: 14 June 2026</p>
+      <p class="doc-meta">Last updated: 10 November 2026</p>
     </div>
   </header>
 
@@ -87,64 +87,69 @@
       <p>This Privacy Policy explains how Innovation Hub Studio Ltd ("we", "us", "our") collects, uses, and protects your personal data when you use the TaxLiteMTD mobile application and website (together, the "Service"). We are the data controller for the purposes of UK data protection law, including the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
 
       <div class="callout">
-        <p><strong>In short:</strong> Your tax records are stored on your own device by default. We never see or store your HMRC Government Gateway password. We do not sell your data. You stay in control of your information.</p>
+        <p><strong>In short:</strong> Your records are stored on your own device. We never see your HMRC Government Gateway password. HMRC sign-in tokens pass through our UK server only to be exchanged, and are never stored there. We do not sell your data or use it for advertising.</p>
       </div>
 
       <h2>1. Who we are</h2>
-      <p>Innovation Hub Studio Ltd is a company registered in the United Kingdom. If you have any questions about this policy or your data, you can contact us at <a href="mailto:contact@taxlitemtd.co.uk">contact@taxlitemtd.co.uk</a>.</p>
+      <p>Innovation Hub Studio Ltd is a company registered in England and Wales (company number 17030420). If you have any questions about this policy or your data, you can contact us at <a href="mailto:contact@taxlitemtd.co.uk">contact@taxlitemtd.co.uk</a>.</p>
 
       <h2>2. What data we collect</h2>
       <h3>Information you provide</h3>
       <ul>
-        <li>Your name and Unique Taxpayer Reference (UTR), used to identify you to HMRC</li>
-        <li>The type of taxpayer you are (sole trader, self-employed, or landlord)</li>
-        <li>Income, expense, and transaction records you enter</li>
-        <li>Receipt and invoice images you choose to attach</li>
+        <li>Your name and National Insurance number, used to identify you to HMRC</li>
+        <li>Your HMRC self-employment business ID, which the app reads from HMRC when you connect</li>
+        <li>Income and expense records you enter</li>
+        <li>Receipt images, if you choose to attach them</li>
       </ul>
       <h3>Information from connecting to HMRC</h3>
       <ul>
-        <li>Authentication tokens issued by HMRC when you connect your account through their secure OAuth service</li>
-        <li>Filing obligations, submission statuses, and reference numbers returned by HMRC</li>
+        <li>Access tokens issued by HMRC when you sign in through their secure OAuth service</li>
+        <li>Your filing obligations, submission confirmations and tax calculations returned by HMRC</li>
       </ul>
-      <h3>Information collected automatically</h3>
+      <h3>Fraud prevention information sent to HMRC</h3>
+      <p>HMRC requires all Making Tax Digital software to send fraud prevention data with every request. The app sends HMRC technical details about your device and connection, such as the device model, operating system, screen size, time zone, the app version, a random identifier created by the app on your device, and the IP address your request comes from. This data goes to HMRC only, as required by law, and is not used by us for any other purpose.</p>
+      <h3>Subscription information</h3>
       <ul>
-        <li>Basic technical and diagnostic data needed to keep the app working and secure</li>
+        <li>If you start a free trial or subscribe, payment is handled by Apple (App Store) or Google (Google Play). We never see your card details.</li>
+        <li>We use RevenueCat to check whether your subscription is active. RevenueCat receives a random identifier created by the app, your purchase and renewal history, your country and basic device information. It does not receive your name, National Insurance number or tax records.</li>
       </ul>
 
       <h2>3. Where your data is stored</h2>
-      <p>By default, the records you enter are stored <strong>locally on your device</strong>. If you subscribe to Premium and enable cloud backup, your records are also stored in encrypted form on secure servers so they can sync across your devices. You can disable cloud backup at any time.</p>
+      <p>The records you enter, your profile and your HMRC access tokens are stored <strong>on your device</strong>. Access tokens are kept in the secure storage provided by iOS and Android. We do not keep a copy of your records on our servers. If you delete the app, this data is removed from your device. Use the export feature if you want to keep a copy.</p>
 
       <h2>4. Your HMRC connection</h2>
-      <p>When you connect your HMRC account, authentication is handled entirely by HMRC's official OAuth 2.0 service. <strong>We never receive, see, or store your Government Gateway user ID or password.</strong> We only hold the access tokens HMRC issues so the app can submit on your behalf, and you can revoke this access at any time.</p>
+      <p>When you connect your HMRC account, you sign in on HMRC's own website through their official OAuth 2.0 service. <strong>We never receive, see or store your Government Gateway user ID or password.</strong></p>
+      <p>To complete the sign-in, the one-time code from HMRC is sent from the app to our token server, which is hosted in the United Kingdom. The server exchanges it with HMRC for access tokens and sends them straight back to your device. The same happens when tokens are renewed. The server does not store or log tokens, codes or any personal data. You can disconnect in the app at any time, and you can also remove TaxLiteMTD's access from your HMRC online account.</p>
 
       <h2>5. How we use your data</h2>
       <ul>
-        <li>To prepare and submit your quarterly updates and Final Declaration to HMRC</li>
-        <li>To calculate estimated figures and show your tax position</li>
-        <li>To send you reminders about upcoming filing deadlines</li>
-        <li>To provide cloud backup and sync, if you enable it</li>
-        <li>To keep the Service secure, reliable, and working correctly</li>
+        <li>To send your quarterly updates and Final Declaration to HMRC when you ask the app to</li>
+        <li>To show your income, expenses and an estimate of your tax position</li>
+        <li>To check whether you have an active subscription or free trial</li>
+        <li>To keep the Service secure and working correctly</li>
       </ul>
 
       <h2>6. Legal bases for processing</h2>
-      <p>We process your data on the basis of performing our contract with you (providing the Service), your consent (for example, cloud backup), and our legitimate interests in keeping the Service secure and functioning. Where processing is required to meet a legal obligation, we rely on that basis.</p>
+      <p>We process your data to perform our contract with you (providing the Service), to meet legal obligations (such as HMRC's fraud prevention requirements), and for our legitimate interest in keeping the Service secure and working.</p>
 
-      <h2>7. Sharing your data</h2>
-      <p>We share data only where necessary to provide the Service:</p>
+      <h2>7. Who we share data with</h2>
+      <p>We share data only where needed to provide the Service:</p>
       <ul>
-        <li><strong>HMRC</strong> — to make the submissions you instruct</li>
-        <li><strong>Infrastructure providers</strong> — who host cloud backup on our behalf under strict data protection terms</li>
+        <li><strong>HMRC</strong>, to make the submissions you instruct and to meet fraud prevention requirements</li>
+        <li><strong>Apple and Google</strong>, who process subscription payments under their own privacy policies</li>
+        <li><strong>RevenueCat, Inc.</strong>, which manages subscription status on our behalf. Data may be processed in the United States under appropriate safeguards.</li>
+        <li><strong>IONOS</strong>, which hosts our token server in the United Kingdom. No personal data is stored on it.</li>
       </ul>
       <p>We do not sell your personal data, and we do not share it for advertising.</p>
 
       <h2>8. How long we keep your data</h2>
-      <p>Local data remains on your device until you delete it or remove the app. Cloud backup data is kept for as long as your Premium subscription is active, and removed within a reasonable period after you cancel or request deletion, subject to any legal retention requirements.</p>
+      <p>Data on your device stays there until you delete it or remove the app. Subscription records held by RevenueCat, Apple and Google are kept in line with their policies and legal requirements for financial records. Our token server keeps nothing.</p>
 
       <h2>9. Your rights</h2>
       <p>Under UK data protection law you have the right to access, correct, delete, restrict, or object to the processing of your personal data, and the right to data portability. To exercise any of these, contact us at <a href="mailto:contact@taxlitemtd.co.uk">contact@taxlitemtd.co.uk</a>. You also have the right to complain to the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk">ico.org.uk</a>.</p>
 
       <h2>10. Security</h2>
-      <p>We use appropriate technical and organisational measures to protect your data, including encryption of cloud-stored data and secure handling of HMRC tokens. No system is completely secure, but we work to protect your information and keep our measures under review.</p>
+      <p>Connections to HMRC and to our token server use encryption in transit (HTTPS). HMRC access tokens are kept in your device's secure storage, and our server never stores them. No system is completely secure, but we work to protect your information and keep our measures under review.</p>
 
       <h2>11. Children</h2>
       <p>The Service is intended for adults managing their own tax affairs and is not directed at anyone under 18.</p>
